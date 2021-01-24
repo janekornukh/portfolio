@@ -17,12 +17,16 @@ body {
 }
 
 #navBar {
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
     display: flex;
     flex-direction: row;
     margin: 0px;
     background-color:#9EA3B0; 
     color: #FFFFFF;
     justify-content: space-between;
+    z-index: 40;
 }
 
 #navigation {
@@ -47,4 +51,50 @@ body {
     justify-content: flex-end;
     align-items: center;
     margin-right: 30pt;   
+}
+
+#flowers img {
+    width: 100%;
+}
+#headline {
+    position: absolute;
+    left: 200px;
+    top: 250px;
+    max-width: 500px;
+    z-index: 10;
+}
+
+#headline h1 {
+    font: 42pt 'Pumpkin Story';
+    color: #546A7B;
+    text-transform: uppercase;
+    margin: 0px 0px 20px 0px ;
+}
+
+#headline h2 {
+    font: 25pt 'Optima';
+    color: #707070;  
+}
+
+ #headline h3 {
+     font: 30pt 'Optima' bold;
+     color: #707070;
+}
+
+#headline p {
+    font: 20px 'Optima';
+    color:  #707070;
+    line-height: 1.5em; 
+}
+
+#avatar {
+    position: absolute;
+    right: 200px;
+    top: 200px;
+    z-index: 9;
+    width: 400px;
+}
+
+#avatar img {
+    width: 100%;
 }
