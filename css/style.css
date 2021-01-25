@@ -23,10 +23,6 @@
     src: local('HelveticaNeue Light'), url('../fonts/HelveticaNeue Light.ttf') format('truetype');
 }
 
-body {
-    font: 14pt 'Helvetica Neue';
-}
-
 #navBar {
     position: -webkit-sticky;
 	position: sticky;
@@ -83,17 +79,19 @@ body {
 }
 
 #headline h2 {
-    font: 25pt 'Optima';
-    color: #707070;  
+    font: 15pt 'Optima';
+    text-align: start;
+    color: #707070;
 }
 
  #headline h3 {
-     font: 30pt 'Optima' bold;
+     font: 20pt 'Optima';
+     font-weight: bold;
      color: #707070;
 }
 
 #headline p {
-    font: 20p 'Optima';
+    font: 15pt 'Optima';
     color:  #707070;
     line-height: 1.5em; 
 }
@@ -129,8 +127,44 @@ body h2 {
 
 .projectOverview {
     margin: 180px 70px 50px 70px;
+    font: 14pt 'Helvetica Neue';
 }
 
 .projectImg img {
     width: 100%;
 }
+
+#footBar {
+    /*position: -webkit-sticky;
+    position: sticky;*/
+    display:flex;
+    bottom: 0;
+    flex-direction: row;
+    background-color:#9EA3B0; 
+    color: #FFFFFF;
+    justify-content: space-between;
+    margin: 0px;
+    z-index: 30;
+}
+
+#footnavigation {
+    display: flex;
+    width: 35%;
+    align-items: center;
+    font: 18pt 'Optima';
+    justify-content: right;
+}
+
+#footnavigation p a {
+    color: #FFFFFF; 
+    margin-right: 30px;  
+}
+
+
+#footBar h5 {
+    justify-content: left;
+    font: 14pt 'Optima';
+    margin-left: 40px;
+    
+}
+
