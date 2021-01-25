@@ -12,6 +12,17 @@
     src: local('Optima'), url('../fonts/OPTIMA.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Helvetica Neu Bold';
+    font-weight: bold;
+    src: local('Helvetica Neu Bold'), url('../fonts/Helvetica Neu Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'HelveticaNeue Light';
+    font-weight: normal;
+    src: local('HelveticaNeue Light'), url('../fonts/HelveticaNeue Light.ttf') format('truetype');
+}
+
 body {
     font: 14pt 'Helvetica Neue';
 }
@@ -82,7 +93,7 @@ body {
 }
 
 #headline p {
-    font: 20px 'Optima';
+    font: 20p 'Optima';
     color:  #707070;
     line-height: 1.5em; 
 }
@@ -96,5 +107,30 @@ body {
 }
 
 #avatar img {
+    width: 100%;
+}
+body h2 {
+    text-align: center;
+    margin: 50px auto;
+    font: 30pt 'Helvetica Neu Bold';
+    color: #0D1F2D;
+}
+
+#projectGrid {
+    display: grid;
+    grid-template-rows: 680px 680px 680px 680px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "pineCone-img pineCone"
+    "homelandSecurity homelandSecurity-img"
+    "Whats-for-Dinner-img Whats-for-Dinner" 
+    "fencesForFido fencesForFido-img";
+}
+
+.projectOverview {
+    margin: 180px 70px 50px 70px;
+}
+
+.projectImg img {
     width: 100%;
 }
