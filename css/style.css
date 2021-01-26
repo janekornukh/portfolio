@@ -130,6 +130,11 @@ body h2 {
     font: 14pt 'Helvetica Neue';
 }
 
+.projectOverview h4 {
+    font: 16pt 'Helvetica Neue';
+    font-weight: bold; 
+}
+
 .projectImg img {
     width: 100%;
 }
@@ -157,14 +162,14 @@ body h2 {
 
 #footnavigation p a {
     color: #FFFFFF; 
-    margin-right: 30px;  
+    margin-right: 30px;
+    text-decoration: none; 
 }
 
 
 #footBar h5 {
     justify-content: left;
     font: 14pt 'Optima';
-    margin-left: 40px;
-    
+    margin-left: 40px; 
+      
 }
-
