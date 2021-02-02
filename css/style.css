@@ -23,6 +23,14 @@
     src: local('HelveticaNeue Light'), url('../fonts/HelveticaNeue Light.ttf') format('truetype');
 }
 
+#logo:hover {
+    color: #FAE1DF;
+    cursor: pointer;
+} 
+
+
+/*********** NavBar **********/
+
 #navBar {
     position: -webkit-sticky;
 	position: sticky;
@@ -41,7 +49,8 @@
     width: 50%;
     align-items: center;
     justify-content: flex-start;
-    font: 18pt 'Optima'; 
+    font: 18pt 'Poppins'; 
+    font-style: normal;
 }
 
 #navigation p {
@@ -60,84 +69,396 @@
     margin-right: 30pt;   
 }
 
-#flowers img {
-    width: 100%;
+/*********** Hero Space **********/
+
+/*********** Mobile **********/
+
+@media only screen and (max-width:600px)
+{
+    #navigation {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: flex-start;
+        font: 18pt 'Poppins'; 
+        font-style: normal;
+    }
+
+    .navBar a.icon {
+        /* background: black; */
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      /* Style navigation menu links */
+    .navigation a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+      
+    #heroSpace {
+        margin-bottom: 7%;
+        padding-top: 70px;
+        display: grid;
+        justify-content: center;
+        align-items: flex-start;
+        grid-template-rows: 300px 140px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "flowers"
+        "ava"
+        "head";
+    }
+
+    #flowers {
+        width: 100%;
+        height: 300px;
+        grid-area: flowers;
+        background-image: url('../images/background_flowers.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #flowers h1, h2 {
+        padding: 20px 0 0 20px;
+    }
+
+    #headline {
+        grid-area: head;
+        z-index: 10;
+        margin: 0% 0% 20% 0%;
+        text-align: center;
+    }
+
+    #headline h1
+    {
+        display: none;
+    }
+
+    #headline h2
+    {
+        display: none;
+        /* margin: 20px 20px 20px 20px; */
+    }
+
+    #avatar {
+        grid-area: ava;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -105px;
+    }
+
+    #avatar img {
+        width: 200px;
+    }
+    #projectGrid {
+        z-index: 13;
+        display: grid;
+        justify-content: center;
+        align-items: flex-start;
+        /* grid-template-rows: ; */
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "pineCone-img" 
+        "pineCone"
+        "homelandSecurity-img"
+        "homelandSecurity"
+        "whats-for-Dinner-img"
+        "whats-for-Dinner"
+        "fencesForFido-img" 
+        "fencesForFido" ;
+    }
+
+    #pineCone-img {
+        grid-area: pineCone-img;
+    }
+    #pineCone {
+        grid-area: pineCone;
+        
+    }
+    #homelandSecurity-img {
+        grid-area: homelandSecurity-img;
+    }
+    #homelandSecurity {
+        grid-area: homelandSecurity;
+    }
+    #Whats-for-Dinner-img {
+        grid-area: whats-for-Dinner-img;
+    }
+    #whats-for-Dinner {
+        grid-area: whats-for-Dinner;
+    }
+
+    #fencesForFido {
+        grid-area: fencesForFido;
+    }
+    #fencesForFido-img {
+        grid-area: fencesForFido-img;
+        
+    }
+
+
+    .projectOverview {
+        margin: 70px 100px 30px 30px;
+        font: 10pt 'Helvetica Neue';
+    }
+    
+    .projectOverview h4 {
+        font: 12pt 'Helvetica Neue';
+        font-weight: bold;
+    
+    }
+
+    /* .graphImg img {
+        display: block;
+        margin: auto;
+        width: 50%;
+
+    } */
+
+ 
+    #resumeGrid {
+        z-index: 13;
+        
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 15;
+        display: grid;
+        /* grid-template-rows: 430px; */
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "graph-img"
+        "summary"
+        
+    }
+    #graph-img {
+        grid-area: graph-img;
+        
+    }
+    #summary {
+        grid-area: summary;
+    }
+   
+
+    .summaryOverview {
+        margin: 70px 70px 50px 70px;
+        font: 14pt 'Helvetica Neue'
+    }
+
+    .graphImg img{
+        width: 60%;
+        display: flex;
+        margin: 70px 40px 20px 150px; 
+        
+    }
+    
 }
-#headline {
-    position: absolute;
-    left: 200px;
-    top: 250px;
-    max-width: 500px;
-    z-index: 10;
+/*********** Desktop **********/
+
+
+
+@media only screen and (min-width:600px)
+{
+    #flowers 
+    {
+        grid-area: flowers;
+        position: absolute;
+    }
+    
+    #flowers img 
+    {
+        width: 100%;
+        z-index: -10;
+    }
+
+    #flowers h1
+    {
+        display: none;
+    }
+    #flowers h2 
+    {
+        display: none;
+    }
+
+    #heroSpace {
+        margin-bottom: 7%;
+        background-image: url('../images/background_flowers.png');
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr;
+        grid-template-columns: 7fr 3fr;
+        grid-template-areas:
+        "head ava";
+    }
+
+    #headline {
+        grid-area: head;
+        z-index: 10;
+        margin: 15% 0% 20% 10%;
+    }
+    
+    #avatar {
+        grid-area: ava;
+        z-index: 9;
+    }
+    
+    #avatar img {
+        width: 80%;
+        margin-top: 25%
+    } 
+
+    #projectGrid {
+        margin-bottom: 50px;
+        z-index: 10;
+        display: grid;
+        grid-template-rows: 680px 680px 680px 680px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "pineCone-img pineCone"
+        "homelandSecurity homelandSecurity-img"
+        "Whats-for-Dinner-img Whats-for-Dinner" 
+        "fencesForFido fencesForFido-img";
+    }
+    .projectOverview  {
+        margin: 70px 70px 50px 70px;
+        font: 14pt 'Helvetica Neue';
+    }
+    
+    .projectOverview h4 {
+        font: 16pt 'Helvetica Neue';
+        font-weight: bold; 
+    }
+
+    /*********** Desktop made by Val **********/
+    
+  
+    .graphImg img {
+        display: block;
+        margin: auto;
+        width: 50%;
+
+    }
+
+ 
+    #resumeGrid {
+        z-index: 15;
+        display: grid;
+        grid-template-rows: 430px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "summary graph-img"
+    }
+
+    .summaryOverview {
+        margin: 70px 70px 50px 70px;
+        font: 14pt 'Helvetica Neue'
+    }
+
+    .graphImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px; 
+        
+    }
+    
 }
 
-#headline h1 {
-    font: 42pt 'Pumpkin Story';
+
+/**********************/
+
+#heroSpace h1 {
+    font: 35pt 'Poppins';
     color: #546A7B;
-    text-transform: uppercase;
-    margin: 0px 0px 20px 0px ;
+    margin: 0px 0px 0px 0px ;
 }
 
-#headline h2 {
-    font: 15pt 'Optima';
+#heroSpace h2 {
+    font: 15pt 'Poppins';
+    font-weight: normal;
     text-align: start;
-    color: #707070;
+    color: #546A7B;
 }
 
- #headline h3 {
-     font: 20pt 'Optima';
-     font-weight: bold;
+ #heroSpace h3 {
+     font: 15pt 'Poppins';
+     font-weight: 600;
      color: #707070;
 }
 
-#headline p {
-    font: 15pt 'Optima';
+#heroSpace p {
+    font: 15pt 'Poppins';
     color:  #707070;
     line-height: 1.5em; 
+    font-weight: normal;
 }
 
-#avatar {
-    position: absolute;
-    right: 200px;
-    top: 200px;
-    z-index: 9;
-    width: 400px;
-}
-
-#avatar img {
+.projectImg {
     width: 100%;
+    /* display: flex;
+    justify-content: center; */
 }
+
+.projectImg img {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+/*****************************************/
+
+/*
+.hoverMe{
+    grid-area: hover;
+    background-color:#546A7B;
+    border-style: inherit;
+    font-family: 'Optima';
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    height: 50px;
+    transition: 0,5s;
+    border-color: #546A7B;
+    border-radius: 50cm;
+    position: absolute;
+    right: 1100px;
+    top: 600px;
+    z-index: 8;
+    width: 200px;
+    
+}
+
+
+.hoverMe img {
+    width: 5px;
+    height: 5px;
+    
+}
+*/
+.hoverMe:hover {
+    background-color: #9EA3B0;
+    border-color: #9EA3B0;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+  }
+
 body h2 {
     text-align: center;
-    margin: 50px auto;
+    margin: 0px auto;
     font: 30pt 'Helvetica Neu Bold';
     color: #0D1F2D;
 }
 
-#projectGrid {
-    display: grid;
-    grid-template-rows: 680px 680px 680px 680px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "pineCone-img pineCone"
-    "homelandSecurity homelandSecurity-img"
-    "Whats-for-Dinner-img Whats-for-Dinner" 
-    "fencesForFido fencesForFido-img";
-}
-
-.projectOverview {
-    margin: 180px 70px 50px 70px;
-    font: 14pt 'Helvetica Neue';
-}
-
-.projectOverview h4 {
-    font: 16pt 'Helvetica Neue';
-    font-weight: bold; 
-}
-
-.projectImg img {
-    width: 100%;
-}
+/*********************Footer**********************/
 
 #footBar {
     /*position: -webkit-sticky;
@@ -173,3 +494,4 @@ body h2 {
     margin-left: 40px; 
       
 }
+

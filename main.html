@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <head>
     <title>Yevheniia Kornukh</title>
+    <link href="css/nav.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav id="navBar">
-        <h1 id="logo">YK</h1>
-        <div id="navigation">
-            <p>Work</p>
-            <p>Resume</p>
-            <p>Contact</p>
-        </div>
-        <div class="linkedinIcon">
-            <a target="_blank"
-               href="https://www.linkedin.com/in/jane-kornukh-10817b196/">
-                <img src="images/logo-linkedin.png">
-            </a>
-        </div>
-    </nav>
+    <header class="header">
+        <a class="logo">YK</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </header>
+
 <section id="heroSpace">
     <div id="flowers">
-        <img src="images/background_flowers.png">
-        <div id="avatar">
-            <img src="images/Avatar.png">
-        </div>
-        <div id="headline">
-            <h1>Yevheniia Kornukh!</h1>
-            <h2>UX/UI Designer</h2>
-            <h3>I Design products that people love</h3>
-            <p>
-                Create user-centric, habit-forming designs
-                and deliver an intuitive yet impactful
-                experience for each project.
-            </p>
-        </div>
+        <h1>Yevheniia Kornukh</h1>
+        <h2><i>A system-minded UX/UI Designer
+            with a business background</i></h2>
+    </div>
+    
+    <div id="headline">
+        <h1>Yevheniia Kornukh</h1>
+        <h2><i>A system-minded UX/UI Designer
+            with a business background</I></h2>
+        <h3>I Design products that people love</h3>
+        <p>
+            Create user-centric, habit-forming designs
+            and deliver<br> an intuitive yet impactful
+            experience for each project.
+        </p>
+    </div>
+    <div id="avatar">
+        <img src="images/Avatar.png">
     </div>
 </section>
 <h2>Projects</h2>
@@ -59,10 +66,10 @@
         <img src="images/HS-group.png">
     </div>
 
-    <div id="Whats-for-Dinner-img" class="projectImg">
+    <div id="whats-for-Dinner-img" class="projectImg">
         <img src="images/WFD-group.png">
     </div>
-    <div id="Whats-for-Dinner" class="projectOverview">
+    <div id="whats-for-Dinner" class="projectOverview">
         <h4>UX Design Case Study - What’s For Dinner? Mobile App</h4>
         <p><b>Problem:</b> In a busy household, meal planning and execution are a lot of work, and 
             too often seem to fall primarily on one person. As of yet, there isn’t a web-based 
@@ -86,6 +93,20 @@
         <img src="images/FFF-group.png">
     </div>
 </section>
+<h2>Resume</h2>
+<section id="resumeGrid">
+    <div id="summary" class="summaryOverview">
+        <p><b>UX/UI Designer</b> skilled at agile methodologies, user research, user interface deployment, visual prototyping (Adobe XD, Figma).<br> Creative problem-solver passionate about research-driven designs.<br><br> <b>Main goal:</b> create user-centric, habit-forming designs and deliver an intuitive yet impactful experience for each project. <br><br> <b>Education background</b> includes a UX/UI Bootcamp certification program from the University of Minnesota. <br>Additionally, a Master’s degree in teaching History and Law from Chernihiv National Teaching University in Ukraine.
+            
+             
+        </p>
+    </div>
+    <div id="graph-img" class="graphImg">
+        <img src="images/Graph.png">
+    </div>
+    
+</section>
+
 <footer id="footBar">
     <h5>&#169; Yevheniia Kornukh Copyright 2021</h5>
     <div id="footnavigation">
