@@ -23,6 +23,12 @@
     src: local('HelveticaNeue Light'), url('../fonts/HelveticaNeue Light.ttf') format('truetype');
 }
 
+#logo:hover {
+    color: #FAE1DF;
+    cursor: pointer;
+} 
+
+
 /*********** NavBar **********/
 
 #navBar {
@@ -64,6 +70,8 @@
 }
 
 /*********** Hero Space **********/
+
+/*********** Mobile **********/
 
 @media only screen and (max-width:600px)
 {
@@ -167,7 +175,6 @@
     }
 
 
-
     .projectOverview {
         margin: 70px 100px 30px 30px;
         font: 10pt 'Helvetica Neue';
@@ -178,8 +185,54 @@
         font-weight: bold;
     
     }
+
+    /* .graphImg img {
+        display: block;
+        margin: auto;
+        width: 50%;
+
+    } */
+
+ 
+    #resumeGrid {
+        z-index: 13;
+        
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 15;
+        display: grid;
+        /* grid-template-rows: 430px; */
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "graph-img"
+        "summary"
+        
+    }
+    #graph-img {
+        grid-area: graph-img;
+        
+    }
+    #summary {
+        grid-area: summary;
+    }
+   
+
+    .summaryOverview {
+        margin: 70px 70px 50px 70px;
+        font: 14pt 'Helvetica Neue'
+    }
+
+    .graphImg img{
+        width: 60%;
+        display: flex;
+        margin: 70px 40px 20px 150px; 
+        
+    }
     
 }
+/*********** Desktop **********/
+
+
 
 @media only screen and (min-width:600px)
 {
@@ -252,8 +305,10 @@
         font: 16pt 'Helvetica Neue';
         font-weight: bold; 
     }
+
+    /*********** Desktop made by Val **********/
     
-    /*
+  
     .graphImg img {
         display: block;
         margin: auto;
@@ -283,7 +338,7 @@
         margin-top: 40px; 
         
     }
-    */
+    
 }
 
 
@@ -372,7 +427,7 @@ body h2 {
     color: #0D1F2D;
 }
 
-
+/*********************Footer**********************/
 
 #footBar {
     /*position: -webkit-sticky;
