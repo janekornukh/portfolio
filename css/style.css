@@ -75,8 +75,35 @@
 
 @media only screen and (max-width:600px)
 {
+    #navigation {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: flex-start;
+        font: 18pt 'Poppins'; 
+        font-style: normal;
+    }
+
+    .navBar a.icon {
+        /* background: black; */
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      /* Style navigation menu links */
+    .navigation a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+      
     #heroSpace {
         margin-bottom: 7%;
+        padding-top: 70px;
         display: grid;
         justify-content: center;
         align-items: flex-start;
@@ -96,6 +123,10 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
+    }
+
+    #flowers h1, h2 {
+        padding: 20px 0 0 20px;
     }
 
     #headline {
