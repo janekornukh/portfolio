@@ -57,10 +57,6 @@
     margin-right: 60pt;
 }
 
-#logo {
-   margin: 7px 0px 0px 60px;
-   font: 35pt 'Pumpkin Story';
-}
 
 .linkedinIcon {
     display: flex;
@@ -164,7 +160,6 @@
         display: grid;
         justify-content: center;
         align-items: flex-start;
-        /* grid-template-rows: ; */
         grid-template-columns: 1fr;
         grid-template-areas:
         "pineCone-img" 
@@ -181,8 +176,7 @@
         grid-area: pineCone-img;
     }
     #pineCone {
-        grid-area: pineCone;
-        
+        grid-area: pineCone;   
     }
     #homelandSecurity-img {
         grid-area: homelandSecurity-img;
@@ -196,13 +190,11 @@
     #whats-for-Dinner {
         grid-area: whats-for-Dinner;
     }
-
     #fencesForFido {
         grid-area: fencesForFido;
     }
     #fencesForFido-img {
-        grid-area: fencesForFido-img;
-        
+        grid-area: fencesForFido-img;    
     }
 
 
@@ -216,14 +208,6 @@
         font-weight: bold;
     
     }
-
-    /* .graphImg img {
-        display: block;
-        margin: auto;
-        width: 50%;
-
-    } */
-
  
     #resumeGrid {
         z-index: 13;
@@ -232,39 +216,74 @@
         align-items: flex-start;
         z-index: 15;
         display: grid;
-        /* grid-template-rows: 430px; */
         grid-template-columns: 1fr;
         grid-template-areas:
         "graph-img"
-        "summary"
-        
+        "summary"   
     }
     #graph-img {
         grid-area: graph-img;
-        
     }
     #summary {
         grid-area: summary;
     }
    
+    .graphImg img {
+        width: 50%;
+        display: block;
+        margin: 20px  auto;
 
-    .summaryOverview {
-        margin: 70px 70px 50px 70px;
-        font: 14pt 'Helvetica Neue'
     }
-
-    .graphImg img{
-        width: 60%;
-        display: flex;
-        margin: 70px 40px 20px 150px; 
+    
+    #skillsGrid {
+        z-index: 17;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "t-skills-img"
+        "t-skills"
+        "d-skills-img"
+        "d-skills"
+        "tools-img" 
+        "tools"
+        "lingo-img"
+        "lingo";
+    }
+    #t-skills-img {
+        grid-area: t-skills-img;
+    }
+    #t-skills {
+        grid-area: t-skills;
+    }
+    #d-skills-img {
+        grid-area: d-skills-img;
+    }
+    #d-skills {
+        grid-area: d-skills;
+    }
+    #tools-img {
+        grid-area: tools-img;
+    }
+    #tools {
+        grid-area: tools;
+    }
+    #lingo-img {
+        grid-area: lingo-img;
+    }
+    #lingo {
+        grid-area: lingo;
+    }
+    
+    .bubles img {
+        display: block;
+        margin: auto;
+        width: 65%;
+    }
         
-    }
-    
-    
 }
+
+
 /*********** Desktop **********/
-
-
 
 @media only screen and (min-width:600px)
 {
@@ -322,11 +341,6 @@
         display: grid;
         grid-template-rows: 680px 680px 680px 580px;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "pineCone-img pineCone"
-        "homelandSecurity homelandSecurity-img"
-        "Whats-for-Dinner-img Whats-for-Dinner" 
-        "fencesForFido fencesForFido-img";
     }
     .projectOverview  {
         margin: 70px 70px 50px 70px;
@@ -337,11 +351,6 @@
         font: 16pt 'Helvetica Neue';
         font-weight: bold; 
     }
-
-    
-    
-
-    /*********** Desktop **********/
     
     .graphImg img {
         display: block;
@@ -363,20 +372,14 @@
         
     }
 
-    .summaryOverview {
-        margin: 70px 70px 50px 70px;
-        font: 14pt 'Helvetica Neue'
-    }
-
     h4 {
-        margin: 70px 70px 50px 70px;
         font: 20pt 'Helvetica Neue';
         font-weight: bold;
     }
 
     #skillsGrid {
         z-index: 17;
-        margin: 70px 70px 70px 70px;
+        /* margin: 70px 70px 50px 70px; */
         display: grid;
         grid-template-rows: 430px 430px 500px 700px;
         grid-template-columns: 1fr 1fr;
@@ -394,15 +397,8 @@
         display: flex;
         justify-content: center;
         margin-top: 100px;
-        }
-        
-        .skills-text{
-            margin: 50px 70px 50px 70px;
-            font: 14pt 'Helvetica Neue';
-            line-height: 1,5;
-        }
-
     }
+
 
     #lingo-img {
         display: block;
@@ -414,10 +410,7 @@
 
     }
 
-    #lingo img {
-        width: 20px;
-        height: 20px;  
-    }
+    
     #d-skills-img{
         display: block;
         margin: auto;
@@ -447,6 +440,12 @@
     justify-content: center;
     margin-top: 80px;
     margin-left: 0px; 
+}
+}
+
+#lingo img {
+    width: 20px;
+    height: 20px;  
 }
 /**********************/
 
@@ -495,17 +494,17 @@
     grid-area: hover;
     background-color:#546A7B;
     border-style: inherit;
-    font-family: 'Optima';
+    font-family: 'Helvetica Neue';
     font-size: 18px;
     color: white;
     text-align: center;
     height: 50px;
     transition: 0,5s;
     border-color: #546A7B;
-    border-radius: 50cm;
-    position: absolute;
-    right: 1100px;
-    top: 600px;
+    border-radius: 20cm;
+    /* position: absolute;
+    left: 150px;
+    top: 600px; */
     z-index: 8;
     width: 200px;
     
