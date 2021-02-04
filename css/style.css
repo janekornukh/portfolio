@@ -260,6 +260,7 @@
         
     }
     
+    
 }
 /*********** Desktop **********/
 
@@ -319,7 +320,7 @@
         margin-bottom: 50px;
         z-index: 10;
         display: grid;
-        grid-template-rows: 680px 680px 680px 680px;
+        grid-template-rows: 680px 680px 680px 580px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "pineCone-img pineCone"
@@ -336,6 +337,9 @@
         font: 16pt 'Helvetica Neue';
         font-weight: bold; 
     }
+
+    
+    
 
     /*********** Desktop **********/
     
@@ -374,7 +378,7 @@
         z-index: 17;
         margin: 70px 70px 70px 70px;
         display: grid;
-        grid-template-rows: 430px 430px 430px 430px;
+        grid-template-rows: 430px 430px 500px 700px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "t-skills-img t-skills"
@@ -408,6 +412,11 @@
         justify-content: center;
         margin-top: 150px;
 
+    }
+
+    #lingo img {
+        width: 20px;
+        height: 20px;  
     }
     #d-skills-img{
         display: block;
@@ -479,9 +488,9 @@
     margin: auto;
 }
 
-/*****************************************/
+/*******************button**********************/
 
-/*
+
 .hoverMe{
     grid-area: hover;
     background-color:#546A7B;
@@ -508,7 +517,7 @@
     height: 5px;
     
 }
-*/
+
 .hoverMe:hover {
     background-color: #9EA3B0;
     border-color: #9EA3B0;
@@ -560,4 +569,125 @@ body h2 {
     margin-left: 40px; 
       
 }
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.preloader .triple-spinner {
+    margin: 0 auto;
+}
+
+/* .preloader img {
+  animation: spin 3s ease;
+  transition: all;
+  width: 150px;
+  margin: 0 auto;
+}
+
+html, body {
+  margin: 0; padding: 0;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  } */
+
+  .triple-spinner {
+    display: block;
+    position: relative;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top: 4px solid #546A7B;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  .triple-spinner::before,
+  .triple-spinner::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid transparent;
+  }
+  .triple-spinner::before {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-top-color: #9EA3B0;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3.5s linear infinite;
+  }
+  .triple-spinner::after {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-top-color: #F5D2CF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.75s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+      from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    
+  
+  @keyframes spin {
+      from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+/********* background animation*/
+/* .hero-bkg-animated {
+  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 300px;
+  padding-top: 120px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+.hero-bkg-animated h1 {
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+} */
+
 
