@@ -57,10 +57,6 @@
     margin-right: 60pt;
 }
 
-#logo {
-   margin: 7px 0px 0px 60px;
-   font: 35pt 'Pumpkin Story';
-}
 
 .linkedinIcon {
     display: flex;
@@ -69,7 +65,66 @@
     margin-right: 30pt;   
 }
 
+h4 a {
+    text-decoration: none;
+}
+
+h4 a:hover {
+    color: #9EA3B0;
+    text-decoration: none;
+}
+
+.projectImg {
+    /* border: 1px solid; */
+    /* border-radius: 5px;
+    padding: 10px; */
+    /* box-shadow: 5px 10px 30px #9EA3B0; */
+}
+
 /*********** Hero Space **********/
+
+/*********** Contact Form **********/
+
+#contact {
+    height: 500px;
+    background-color: #f4f4f4;
+    padding: 50px 50px 50px 50px;
+}
+
+#contact label {
+    display: block;
+}
+
+.textInput {
+    display: block;
+    width: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 1px solid #e4e4e4;
+    margin-top: 10px;
+}
+
+.textInput:active, 
+.textInput:focus {
+    border-color: #43464d;
+}
+.textInput:hover {
+    border-color: #e3e6eb;
+}
+
+
+
+.nameBlock {
+    grid-area: nameBlock;
+}
+
+.emailBlock {
+    grid-area: emailBlock;
+}
+
+.messageBlock {
+    grid-area: messageBlock;
+}
 
 /*********** Mobile **********/
 
@@ -164,7 +219,6 @@
         display: grid;
         justify-content: center;
         align-items: flex-start;
-        /* grid-template-rows: ; */
         grid-template-columns: 1fr;
         grid-template-areas:
         "pineCone-img" 
@@ -181,8 +235,7 @@
         grid-area: pineCone-img;
     }
     #pineCone {
-        grid-area: pineCone;
-        
+        grid-area: pineCone;   
     }
     #homelandSecurity-img {
         grid-area: homelandSecurity-img;
@@ -196,34 +249,23 @@
     #whats-for-Dinner {
         grid-area: whats-for-Dinner;
     }
-
     #fencesForFido {
         grid-area: fencesForFido;
     }
     #fencesForFido-img {
-        grid-area: fencesForFido-img;
-        
+        grid-area: fencesForFido-img;    
     }
 
 
     .projectOverview {
-        margin: 70px 100px 30px 30px;
+        margin: 70px 100px 50px 30px;
         font: 10pt 'Helvetica Neue';
     }
     
     .projectOverview h4 {
         font: 12pt 'Helvetica Neue';
         font-weight: bold;
-    
     }
-
-    /* .graphImg img {
-        display: block;
-        margin: auto;
-        width: 50%;
-
-    } */
-
  
     #resumeGrid {
         z-index: 13;
@@ -232,38 +274,87 @@
         align-items: flex-start;
         z-index: 15;
         display: grid;
-        /* grid-template-rows: 430px; */
         grid-template-columns: 1fr;
         grid-template-areas:
         "graph-img"
-        "summary"
-        
+        "summary"   
     }
     #graph-img {
         grid-area: graph-img;
-        
     }
     #summary {
         grid-area: summary;
     }
    
+    .graphImg img {
+        width: 50%;
+        display: block;
+        margin: 20px  auto;
 
-    .summaryOverview {
-        margin: 70px 70px 50px 70px;
-        font: 14pt 'Helvetica Neue'
-    }
-
-    .graphImg img{
-        width: 60%;
-        display: flex;
-        margin: 70px 40px 20px 150px; 
-        
     }
     
+    #skillsGrid {
+        z-index: 17;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "t-skills-img"
+        "t-skills"
+        "d-skills-img"
+        "d-skills"
+        "tools-img" 
+        "tools"
+        "lingo-img"
+        "lingo";
+    }
+    #t-skills-img {
+        grid-area: t-skills-img;
+    }
+    #t-skills {
+        grid-area: t-skills;
+    }
+    #d-skills-img {
+        grid-area: d-skills-img;
+    }
+    #d-skills {
+        grid-area: d-skills;
+    }
+    #tools-img {
+        grid-area: tools-img;
+    }
+    #tools {
+        grid-area: tools;
+    }
+    #lingo-img {
+        grid-area: lingo-img;
+    }
+    #lingo {
+        grid-area: lingo;
+    }
+    
+    .bubles img {
+        display: block;
+        margin: auto;
+        width: 65%;
+    }
+
+    .contactForm {
+        display: grid;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nameBlock"
+            "emailBlock"
+            "messageBlock";
+    }
+        
 }
+
+
 /*********** Desktop **********/
-
-
 
 @media only screen and (min-width:600px)
 {
@@ -308,6 +399,7 @@
     #avatar {
         grid-area: ava;
         z-index: 9;
+        margin-top: 50px;
     }
     
     #avatar img {
@@ -319,13 +411,8 @@
         margin-bottom: 50px;
         z-index: 10;
         display: grid;
-        grid-template-rows: 680px 680px 680px 680px;
+        grid-template-rows: 680px 680px 680px 580px;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "pineCone-img pineCone"
-        "homelandSecurity homelandSecurity-img"
-        "Whats-for-Dinner-img Whats-for-Dinner" 
-        "fencesForFido fencesForFido-img";
     }
     .projectOverview  {
         margin: 70px 70px 50px 70px;
@@ -336,18 +423,17 @@
         font: 16pt 'Helvetica Neue';
         font-weight: bold; 
     }
-
-    /*********** Desktop made by Val **********/
     
-  
     .graphImg img {
         display: block;
         margin: auto;
         width: 50%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
 
     }
 
- 
     #resumeGrid {
         z-index: 15;
         display: grid;
@@ -355,24 +441,94 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "summary graph-img"
-    }
-
-    .summaryOverview {
-        margin: 70px 70px 50px 70px;
-        font: 14pt 'Helvetica Neue'
-    }
-
-    .graphImg {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 40px; 
         
     }
+
+    h4 {
+        font: 20pt 'Helvetica Neue';
+        font-weight: bold;
+    }
+
+    #skillsGrid {
+        z-index: 17;
+        /* margin: 70px 70px 50px 70px; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "t-skills-img t-skills"
+        "d-skills d-skills-img"
+        "tools-img tools"
+        "lingo lingo-img"
+    }
+
+    .bubles img {
+        display: block;
+        margin: auto;
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+
+    #lingo-img {
+        display: block;
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+
+    }
+
     
+    #d-skills-img{
+        display: block;
+        margin: auto;
+        width: 120%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: -100px;
+
 }
 
+#tools-img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: -50px;
 
+}
+#t-skills-img{
+    display: block;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 0px; 
+}
+.contactForm {
+    display: grid;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "nameBlock emailBlock"
+        "messageBlock messageBlock";
+}
+}
+
+#lingo img {
+    width: 20px;
+    height: 20px;  
+}
 /**********************/
 
 #heroSpace h1 {
@@ -413,26 +569,25 @@
     margin: auto;
 }
 
-/*****************************************/
 
-/*
+/*******************button**********************/
+
+
 .hoverMe{
     grid-area: hover;
     background-color:#546A7B;
     border-style: inherit;
-    font-family: 'Optima';
+    font-family: 'Helvetica Neue';
     font-size: 18px;
     color: white;
     text-align: center;
     height: 50px;
     transition: 0,5s;
     border-color: #546A7B;
-    border-radius: 50cm;
-    position: absolute;
-    right: 1100px;
-    top: 600px;
+    border-radius: 0.3cm;
     z-index: 8;
     width: 200px;
+    margin: 30px auto;
     
 }
 
@@ -442,7 +597,7 @@
     height: 5px;
     
 }
-*/
+
 .hoverMe:hover {
     background-color: #9EA3B0;
     border-color: #9EA3B0;
@@ -453,16 +608,17 @@
 
 body h2 {
     text-align: center;
-    margin: 0px auto;
+    margin: 0px ;
+    margin: 0px 0px 20px 0px;
     font: 30pt 'Helvetica Neu Bold';
     color: #0D1F2D;
 }
 
-/*********************Footer**********************/
+
+/* ********************Footer*********************/
 
 #footBar {
-    /*position: -webkit-sticky;
-    position: sticky;*/
+   
     display:flex;
     bottom: 0;
     flex-direction: row;
@@ -493,5 +649,172 @@ body h2 {
     font: 14pt 'Optima';
     margin-left: 40px; 
       
+}   
+
+
+/* Footer optional*/
+
+/* .emailContain {
+  background: url(../images/footer-flowers.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
 }
 
+.footerCard {
+  width: 500px;
+  margin: 35px auto;
+  padding: 45px;
+  border: 4px solid #9EA3B0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+
+.footerIcons, h4{
+ text-align: center;
+}
+
+.footerCard a:link {
+text-decoration: none;
+}  */
+
+/*********Preloader************/
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+ 
+.preloader .triple-spinner {
+    margin: 0 auto;
+}
+
+/****Alternative Preloader********** 
+.preloader img {
+  animation: spin 3s ease;
+  transition: all;
+  width: 150px;
+  margin: 0 auto;
+}
+
+html, body {
+  margin: 0; padding: 0;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  } */
+
+  .triple-spinner {
+    display: block;
+    position: relative;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top: 4px solid #546A7B;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  .triple-spinner::before,
+  .triple-spinner::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid transparent;
+  }
+  .triple-spinner::before {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-top-color: #9EA3B0;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3.5s linear infinite;
+  }
+  .triple-spinner::after {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-top-color: #F5D2CF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.75s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+      from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    
+  
+  @keyframes spin {
+      from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+/********* background animation*/
+/* .hero-bkg-animated {
+  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 300px;
+  padding-top: 120px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+.hero-bkg-animated h1 {
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+} */
+
+/*  animation */
+
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+  }
+  
+  @keyframes come-in {
+    to { transform: translateY(0); }
+  }
