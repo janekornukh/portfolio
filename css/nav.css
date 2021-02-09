@@ -15,7 +15,6 @@
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
 }
 
 a {
@@ -55,15 +54,18 @@ a {
 }
 
 .header .logo {
-  /* display: block; */
-  /* float: left; */
+  display: inline-block;
   font-size: 2em;
-  padding: 8px 20px 9px 60px;
   text-decoration: none;
   color: white;
   font: 30pt 'Poppins';
   font-weight: bold;
-  margin: auto;
+  margin: 8px 20px 8px 60px;
+  transition: transform .2s;
+}
+
+.logo:hover {
+  transform: scale(1.2);
 }
 
 .header a:hover {

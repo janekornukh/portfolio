@@ -65,7 +65,66 @@
     margin-right: 30pt;   
 }
 
+h4 a {
+    text-decoration: none;
+}
+
+h4 a:hover {
+    color: #9EA3B0;
+    text-decoration: none;
+}
+
+.projectImg {
+    /* border: 1px solid; */
+    /* border-radius: 5px;
+    padding: 10px; */
+    /* box-shadow: 5px 10px 30px #9EA3B0; */
+}
+
 /*********** Hero Space **********/
+
+/*********** Contact Form **********/
+
+#contact {
+    height: 500px;
+    background-color: #f4f4f4;
+    padding: 50px 50px 50px 50px;
+}
+
+#contact label {
+    display: block;
+}
+
+.textInput {
+    display: block;
+    width: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 1px solid #e4e4e4;
+    margin-top: 10px;
+}
+
+.textInput:active, 
+.textInput:focus {
+    border-color: #43464d;
+}
+.textInput:hover {
+    border-color: #e3e6eb;
+}
+
+
+
+.nameBlock {
+    grid-area: nameBlock;
+}
+
+.emailBlock {
+    grid-area: emailBlock;
+}
+
+.messageBlock {
+    grid-area: messageBlock;
+}
 
 /*********** Mobile **********/
 
@@ -199,14 +258,13 @@
 
 
     .projectOverview {
-        margin: 70px 100px 30px 30px;
+        margin: 70px 100px 50px 30px;
         font: 10pt 'Helvetica Neue';
     }
     
     .projectOverview h4 {
         font: 12pt 'Helvetica Neue';
         font-weight: bold;
-    
     }
  
     #resumeGrid {
@@ -279,6 +337,19 @@
         margin: auto;
         width: 65%;
     }
+
+    .contactForm {
+        display: grid;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nameBlock"
+            "emailBlock"
+            "messageBlock";
+    }
         
 }
 
@@ -328,6 +399,7 @@
     #avatar {
         grid-area: ava;
         z-index: 9;
+        margin-top: 50px;
     }
     
     #avatar img {
@@ -381,7 +453,6 @@
         z-index: 17;
         /* margin: 70px 70px 50px 70px; */
         display: grid;
-        grid-template-rows: 430px 430px 500px 700px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "t-skills-img t-skills"
@@ -441,6 +512,17 @@
     margin-top: 80px;
     margin-left: 0px; 
 }
+.contactForm {
+    display: grid;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "nameBlock emailBlock"
+        "messageBlock messageBlock";
+}
 }
 
 #lingo img {
@@ -487,6 +569,7 @@
     margin: auto;
 }
 
+
 /*******************button**********************/
 
 
@@ -501,12 +584,10 @@
     height: 50px;
     transition: 0,5s;
     border-color: #546A7B;
-    border-radius: 20cm;
-    /* position: absolute;
-    left: 150px;
-    top: 600px; */
+    border-radius: 0.3cm;
     z-index: 8;
     width: 200px;
+    margin: 30px auto;
     
 }
 
@@ -527,16 +608,17 @@
 
 body h2 {
     text-align: center;
-    margin: 0px auto;
+    margin: 0px ;
+    margin: 0px 0px 20px 0px;
     font: 30pt 'Helvetica Neu Bold';
     color: #0D1F2D;
 }
 
-/*********************Footer**********************/
+
+/* ********************Footer*********************/
 
 #footBar {
-    /*position: -webkit-sticky;
-    position: sticky;*/
+   
     display:flex;
     bottom: 0;
     flex-direction: row;
@@ -567,7 +649,43 @@ body h2 {
     font: 14pt 'Optima';
     margin-left: 40px; 
       
+}   
+
+
+/* Footer optional*/
+
+/* .emailContain {
+  background: url(../images/footer-flowers.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
 }
+
+.footerCard {
+  width: 500px;
+  margin: 35px auto;
+  padding: 45px;
+  border: 4px solid #9EA3B0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+
+.footerIcons, h4{
+ text-align: center;
+}
+
+.footerCard a:link {
+text-decoration: none;
+}  */
+
+/*********Preloader************/
 
 .preloader {
   position: fixed;
@@ -579,12 +697,13 @@ body h2 {
   display: flex;
   align-items: center;
 }
-
+ 
 .preloader .triple-spinner {
     margin: 0 auto;
 }
 
-/* .preloader img {
+/****Alternative Preloader********** 
+.preloader img {
   animation: spin 3s ease;
   transition: all;
   width: 150px;
@@ -689,4 +808,13 @@ html, body {
     to { background-position: -400px 0; }
 } */
 
+/*  animation */
 
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+  }
+  
+  @keyframes come-in {
+    to { transform: translateY(0); }
+  }
