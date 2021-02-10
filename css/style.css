@@ -126,6 +126,40 @@ h4 a:hover {
     grid-area: messageBlock;
 }
 
+/*********** About Me **********/
+
+#aboutMe {
+    z-index: 19;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 3fr;   
+}
+
+#avatar2 {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    background-color:#536A7B;
+    color: white;
+    padding: 20px 20px 20px 20px;
+    align-content: center;
+}
+
+#avatar2 img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+#coverLetter {
+    padding: 0px 30px 0px 30px;
+    font: 14pt 'Helvetica Neue';
+    background-color:#f4f4f4;
+}
+
 /*********** Mobile **********/
 
 @media only screen and (max-width:600px)
@@ -155,9 +189,31 @@ h4 a:hover {
         font-size: 17px;
         display: block;
     }
-      
+    
+    #footBar {
+        display:none;
+    }
+
+    #footBarMobile {
+        display:flex;
+        bottom: 0;
+        flex-direction: row;
+        background-color:#9EA3B0; 
+        color: #FFFFFF;
+        justify-content: center;
+        margin: 0px;
+        z-index: 30;
+    }
+
+    #footnavigation {
+        display: flex;
+        width: 35%;
+        align-items: center;
+        font: 18pt 'Optima';
+        justify-content: space-between;
+    }
+
     #heroSpace {
-        margin-bottom: 7%;
         padding-top: 70px;
         display: grid;
         justify-content: center;
@@ -182,8 +238,9 @@ h4 a:hover {
 
     #flowers h1, h2 {
         padding: 20px 0 0 20px;
+        margin:  20px 0 0 20px;
     }
-
+    
     #headline {
         grid-area: head;
         z-index: 10;
@@ -199,7 +256,6 @@ h4 a:hover {
     #headline h2
     {
         display: none;
-        /* margin: 20px 20px 20px 20px; */
     }
 
     #avatar {
@@ -293,6 +349,13 @@ h4 a:hover {
 
     }
     
+    #aboutMe {
+        z-index: 19;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;   
+    }
+
     #skillsGrid {
         z-index: 17;
         display: grid;
@@ -380,7 +443,6 @@ h4 a:hover {
     }
 
     #heroSpace {
-        margin-bottom: 7%;
         background-image: url('../images/background_flowers.png');
         display: grid;
         justify-content: center;
@@ -408,7 +470,7 @@ h4 a:hover {
     } 
 
     #projectGrid {
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
         z-index: 10;
         display: grid;
         grid-template-rows: 680px 680px 680px 580px;
@@ -447,6 +509,13 @@ h4 a:hover {
     h4 {
         font: 20pt 'Helvetica Neue';
         font-weight: bold;
+    }
+
+    #aboutMe {
+        z-index: 19;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 3fr;   
     }
 
     #skillsGrid {
@@ -490,39 +559,62 @@ h4 a:hover {
         justify-content: center;
         margin-top: 30px;
         margin-left: -100px;
+    }
 
-}
+    #tools-img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        margin-left: -50px;
 
-#tools-img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    margin-left: -50px;
+    }
+    #t-skills-img{
+        display: block;
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        margin-left: 0px; 
+    }
+    .contactForm {
+        display: grid;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 30px;
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "nameBlock emailBlock"
+            "messageBlock messageBlock";
+    }
 
-}
-#t-skills-img{
-    display: block;
-    margin: auto;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    margin-left: 0px; 
-}
-.contactForm {
-    display: grid;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 30px;
-    width: 80%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "nameBlock emailBlock"
-        "messageBlock messageBlock";
-}
+    #footBarMobile {   
+        display:none;
+    }
+    
+    #footBar {
+       
+        display:flex;
+        bottom: 0;
+        flex-direction: row;
+        background-color:#9EA3B0; 
+        color: #FFFFFF;
+        justify-content: space-between;
+        margin: 0px;
+        z-index: 30;
+    }
+    
+    #footnavigation {
+        display: flex;
+        width: 350px;
+        align-items: center;
+        font: 18pt 'Optima';
+        justify-content: right;
+    }
 }
 
 #lingo img {
@@ -559,8 +651,6 @@ h4 a:hover {
 
 .projectImg {
     width: 100%;
-    /* display: flex;
-    justify-content: center; */
 }
 
 .projectImg img {
@@ -608,7 +698,7 @@ h4 a:hover {
 
 body h2 {
     text-align: center;
-    margin: 0px ;
+    padding: 100px 0 0 0;
     margin: 0px 0px 20px 0px;
     font: 30pt 'Helvetica Neu Bold';
     color: #0D1F2D;
@@ -616,26 +706,6 @@ body h2 {
 
 
 /* ********************Footer*********************/
-
-#footBar {
-   
-    display:flex;
-    bottom: 0;
-    flex-direction: row;
-    background-color:#9EA3B0; 
-    color: #FFFFFF;
-    justify-content: space-between;
-    margin: 0px;
-    z-index: 30;
-}
-
-#footnavigation {
-    display: flex;
-    width: 35%;
-    align-items: center;
-    font: 18pt 'Optima';
-    justify-content: right;
-}
 
 #footnavigation p a {
     color: #FFFFFF; 
