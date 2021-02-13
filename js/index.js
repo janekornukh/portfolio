@@ -4,7 +4,7 @@ function fade() {
     $('.preloader').fadeOut("slow");
 }
 
-setTimeout(fade, 200);
+setTimeout(fade, 2000);
 
 // animation
 
