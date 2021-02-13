@@ -57,14 +57,6 @@
     margin-right: 60pt;
 }
 
-
-.linkedinIcon {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 30pt;   
-}
-
 h4 a {
     text-decoration: none;
 }
@@ -74,12 +66,6 @@ h4 a:hover {
     text-decoration: none;
 }
 
-.projectImg {
-    /* border: 1px solid; */
-    /* border-radius: 5px;
-    padding: 10px; */
-    /* box-shadow: 5px 10px 30px #9EA3B0; */
-}
 
 /*********** Hero Space **********/
 
@@ -160,6 +146,16 @@ h4 a:hover {
     background-color:#f4f4f4;
 }
 
+#designThinking img{
+width: 80%;
+margin: auto;
+padding: 50px 0 100px 0;
+}
+.textDT p{
+  text-align: center;
+  color: #536A7B;
+  margin: 10px 20px 10px 20px;
+}
 /*********** Mobile **********/
 
 @media only screen and (max-width:600px)
@@ -678,7 +674,26 @@ h4 a:hover {
     z-index: 8;
     width: 200px;
     margin: 30px auto;
+    text-decoration: none;
     
+}
+
+.button {
+    display: block;
+    grid-area: hover;
+    width: 200px;
+    height: 25px;
+    background: #546A7B;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0.3cm;
+    color: white;
+    line-height: 25px;
+    text-decoration: none;
+    border-style: inherit;
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+    transition: 0,5s;
 }
 
 
@@ -688,22 +703,21 @@ h4 a:hover {
     
 }
 
-.hoverMe:hover {
+.button:hover {
     background-color: #9EA3B0;
     border-color: #9EA3B0;
     width: 200px;
-    height: 50px;
+    height: 25px;
     cursor: pointer;
   }
 
 body h2 {
     text-align: center;
-    padding: 100px 0 0 0;
-    margin: 0px 0px 20px 0px;
+    padding: 100px 0 0 30;
+    margin: 10px 0px 20px 10px;
     font: 30pt 'Helvetica Neu Bold';
     color: #0D1F2D;
 }
-
 
 /* ********************Footer*********************/
 
