@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1008.5" height="39.5" viewBox="0 0 1008.5 39.5">
+  <g id="Group_2770" data-name="Group 2770" transform="translate(-16074 18721)">
+    <text id="Definition" transform="translate(16334 -18697)" fill="#0d1f2d" font-size="27" font-family="Helvetica"><tspan x="0" y="0">Definition</tspan></text>
+    <text id="User_Research" data-name="User Research" transform="translate(16074 -18697)" fill="#0d1f2d" font-size="27" font-family="Helvetica"><tspan x="0" y="0">User Research</tspan></text>
+    <text id="Ideation" transform="translate(16527 -18697)" fill="#0d1f2d" font-size="27" font-family="Helvetica"><tspan x="0" y="0">Ideation</tspan></text>
+    <text id="Prototyping" transform="translate(16730 -18700)" fill="#0d1f2d" font-size="27" font-family="Helvetica"><tspan x="0" y="0">Prototyping</tspan></text>
+    <g id="Group_2769" data-name="Group 2769">
+      <line id="Line_58" data-name="Line 58" x2="96" transform="translate(16982.5 -18685.5)" fill="none" stroke="#9ea3b0" stroke-linecap="round" stroke-width="8"/>
+      <text id="Testing" transform="translate(16976 -18697)" fill="#0d1f2d" font-size="30" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0" y="0">Testing</tspan></text>
+    </g>
+  </g>
+</svg>

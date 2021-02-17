@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="785" height="47.5" viewBox="0 0 785 47.5">
+  <g id="Ideation_nav" data-name="Ideation nav" transform="translate(-16072 18941)">
+    <g id="Group_2754" data-name="Group 2754" transform="translate(-20 111)">
+      <text id="Definition" transform="translate(16352 -19023)" fill="#0d1f2d" font-size="27" font-family="Helvetica"><tspan x="0" y="0">Definition</tspan></text>
+    </g>
+    <g id="Group_2749" data-name="Group 2749" transform="translate(15904 -20252)">
+      <text id="User_Research" data-name="User Research" transform="translate(168 1340)" fill="#0d1f2d" font-size="27" font-family="Helvetica"><tspan x="0" y="0">User Research</tspan></text>
+    </g>
+    <text id="Prototyping" transform="translate(16720 -18912)" fill="#0d1f2d" font-size="27" font-family="Helvetica"><tspan x="0" y="0">Prototyping</tspan></text>
+    <g id="Group_2757" data-name="Group 2757" transform="translate(-25)">
+      <text id="Ideation" transform="translate(16550 -18918)" fill="#0d1f2d" font-size="30" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0" y="0">Ideation</tspan></text>
+      <line id="Line_56" data-name="Line 56" x2="110" transform="translate(16553.5 -18897.5)" fill="none" stroke="#9ea3b0" stroke-linecap="round" stroke-width="8"/>
+    </g>
+  </g>
+</svg>
