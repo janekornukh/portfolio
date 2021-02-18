@@ -28,9 +28,13 @@ $(window).scroll(function() {
     // Assign active class to nav links while scolling
     
     $('.page-section').each(function(i) {
-            if ($(this).position().top <= scrollDistance) {
+            if ($(this).offsetTop<= scrollDistance) {
                     $('.selected').removeClass('selected');
+                    console.log(this)
                     $('.list-inline').eq(i).addClass('active');
+            }
+            else {
+                console.log("hit");
             }
     });
 }).scroll();
