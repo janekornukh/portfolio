@@ -750,6 +750,15 @@ body h2 {
     color: #0D1F2D;
 }
 
+.container img {
+    width: 50%;
+    margin: 70px 50px 70px 0px;
+}
+
+.container{
+   align-items: center;
+    margin-bottom:  100px;
+}
 /* ********************Footer*********************/
 
 #footnavigation p a {

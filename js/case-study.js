@@ -38,3 +38,12 @@ $(window).scroll(function() {
             }
     });
 }).scroll();
+
+
+// preloader
+
+// function fade() {
+//     $('.preloader').fadeOut("slow");
+// }
+
+// setTimeout(fade, 2000);
