@@ -16,6 +16,11 @@
   src: local("HelveticaNeue Light"),
     url("../fonts/HelveticaNeue Light.ttf") format("truetype");
 }
+
+html {
+  --section-padding-top: 160px;
+}
+
 .navbar {
   background-color: #768760 !important;
   /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
@@ -25,6 +30,7 @@
   z-index: 40;
   */
 }
+
 .nav-link {
   color: white !important;
   font: 18pt "Poppins";
@@ -85,7 +91,7 @@ h4 {
   font: 18pt "Helvetica Neu Bold" !important;
   color: black;
   font-weight: bold;
-  margin: 70px 0 40px 0;
+  margin: 25px 0 40px 0;
 }
 
 .img-fluid {
@@ -119,7 +125,6 @@ footer {
   position: sticky;
   z-index: 100;
   top: 76px;
-  height: 76px;
   width: 100%;
   background-color: white;
   text-align: center;
@@ -127,12 +132,10 @@ footer {
 
 .list-inline {
   vertical-align: middle;
-  height: 76px;
   line-height: 76px;
 }
 
 .list-inline-item a {
-  text-decoration: none;
   color: black;
   font: 18pt 'Poppins';
   margin: 0 15px 0 15px;
@@ -150,3 +153,11 @@ footer {
   font-weight: 600;
 }
 
+.case-study-section {
+  padding-top: var(--section-padding-top);
+  margin-top: calc(var(--section-padding-top) * -1);
+}
+
+.jumbotron {
+  margin-bottom: 0 !important;
+}
