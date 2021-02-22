@@ -1,49 +1,30 @@
-$(document).ready(function() {
-    // $('a[href*=#]').bind('click', function(e) {
-    //         e.preventDefault(); // prevent hard jump, the default behavior
+let mainNavLinks = document.querySelectorAll(".case-study-nav .list-inline-item a");
+let mainSections = document.querySelectorAll(".case-study-section");
 
-    //         var target = $(this).attr("href"); // Set the target as variable
+let lastId;
+let cur = [];
 
-    //         // perform animated scrolling by getting top-position of target-element and set it as scroll target
-    //         $('html, body').stop().animate({
-    //                 scrollTop: $(target).offset().top
-    //         }, 600, function() {
-    //                 location.hash = target; //attach the hash (#jumptarget) to the pageurl
-    //         });
-
-    //         return false;
-    // });
-});
+$(".case-study-section").css("--section-padding-top", "160px");
 
 $(window).scroll(function() {
-    var scrollDistance = $(window).scrollTop();
+    let navHeight = $(".case-study-nav").height();
 
-    // Show/hide menu on scroll
-    //if (scrollDistance >= 850) {
-    //		$('nav').fadeIn("fast");
-    //} else {
-    //		$('nav').fadeOut("fast");
-    //}
+    let sectionPadding = navHeight > 76 ? 220 : 160;
 
-    // Assign active class to nav links while scolling
+    $(".case-study-section").css("--section-padding-top", sectionPadding + "px");
     
-    $('.page-section').each(function(i) {
-            if ($(this).offsetTop<= scrollDistance) {
-                    $('.selected').removeClass('selected');
-                    console.log(this)
-                    $('.list-inline').eq(i).addClass('active');
-            }
-            else {
-                console.log("hit");
-            }
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach(link => {
+      let section = document.querySelector(link.hash);
+  
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight - sectionPadding > fromTop
+      ) {
+        link.classList.add("selected");
+      } else {
+        link.classList.remove("selected");
+      }
     });
 }).scroll();
-
-
-// preloader
-
-// function fade() {
-//     $('.preloader').fadeOut("slow");
-// }
-
-// setTimeout(fade, 2000);
