@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="508" height="186" viewBox="0 0 508 186">
+  <g id="Group_2655" data-name="Group 2655" transform="translate(-1222 -6195)">
+    <g id="Component_464_1" data-name="Component 464 – 1" transform="translate(1384 6196)">
+      <g id="Ellipse_331" data-name="Ellipse 331" fill="#536a7b" stroke="#f6e2e0" stroke-width="6">
+        <circle cx="92" cy="92" r="92" stroke="none"/>
+        <circle cx="92" cy="92" r="89" fill="none"/>
+      </g>
+    </g>
+    <text id="UKRAINIAN" transform="translate(1412 6295)" fill="#fff" font-size="23" font-family="Optima-Bold, Optima" font-weight="700"><tspan x="0" y="0">UKRAINIAN</tspan></text>
+    <g id="Component_466_1" data-name="Component 466 – 1" transform="translate(1546 6195)">
+      <g id="Component_465_1" data-name="Component 465 – 1">
+        <g id="Ellipse_331-2" data-name="Ellipse 331" fill="#536a7b" stroke="#f6e2e0" stroke-width="6">
+          <circle cx="92" cy="92" r="92" stroke="none"/>
+          <circle cx="92" cy="92" r="89" fill="none"/>
+        </g>
+      </g>
+      <text id="RUSSIAN" transform="translate(44 100)" fill="#fff" font-size="23" font-family="Optima-Bold, Optima" font-weight="700"><tspan x="0" y="0">RUSSIAN</tspan></text>
+    </g>
+    <g id="Group_2650" data-name="Group 2650" transform="translate(118 2242)">
+      <g id="Component_463_1" data-name="Component 463 – 1" transform="translate(1104 3955)">
+        <g id="Ellipse_331-3" data-name="Ellipse 331" fill="#536a7b" stroke="#f6e2e0" stroke-width="6">
+          <circle cx="92" cy="92" r="92" stroke="none"/>
+          <circle cx="92" cy="92" r="89" fill="none"/>
+        </g>
+      </g>
+      <text id="ENGLISH" transform="translate(1148 4055)" fill="#fff" font-size="23" font-family="Optima-Bold, Optima" font-weight="700"><tspan x="0" y="0">ENGLISH</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -49,7 +49,7 @@ a {
   border-right: 1px solid #9ea3b0;
   text-decoration: none;
   color: white;
-  font: 18pt 'Poppins';
+  font: 18pt "Poppins";
 }
 
 .header li a:hover,
@@ -62,10 +62,10 @@ a {
   font-size: 2em;
   text-decoration: none;
   color: white;
-  font: 30pt 'Poppins';
+  font: 30pt "Poppins";
   font-weight: bold;
   margin: 8px 20px 8px 60px;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .logo:hover {
@@ -73,8 +73,8 @@ a {
 }
 
 .header a:hover {
-    color: #FAE1DF;
-    cursor: pointer;
+  color: #fae1df;
+  cursor: pointer;
 }
 
 /* menu */
@@ -168,4 +168,67 @@ a {
   .header .menu-icon {
     display: none;
   }
+
+  /* footbar */
+  #footBarMobile {
+    display: none;
+  }
+
+  #footBar {
+    display: flex;
+    bottom: 0;
+    flex-direction: row;
+    background-color: #9ea3b0;
+    color: #ffffff;
+    justify-content: space-between;
+    margin: 0px;
+    z-index: 30;
+  }
+
+  #footnavigation {
+    display: flex;
+    width: 350px;
+    align-items: center;
+    font: 18pt "Optima";
+    justify-content: right;
+  }
+}
+
+@media (max-width: 600px) {
+  #footBar {
+    display: none;
+  }
+
+  #footBarMobile {
+    display: flex;
+    bottom: 0;
+    flex-direction: row;
+    background-color: #9ea3b0;
+    color: #ffffff;
+    justify-content: center;
+    margin: 0px;
+    z-index: 30;
+  }
+
+  #footnavigation {
+    display: flex;
+    width: 35%;
+    align-items: center;
+    font: 18pt "Optima";
+    justify-content: space-between;
+  }
+}
+
+#footnavigation p a {
+  color: #FFFFFF; 
+  margin-right: 30px;
+  text-decoration: none; 
+}
+
+
+#footBar h5 {
+  justify-content: left;
+  font: 14pt 'Optima';
+  margin-left: 40px; 
+    
 }
