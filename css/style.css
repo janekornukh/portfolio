@@ -1,11 +1,4 @@
 @font-face {
-    font-family: 'Pumpkin Story';
-    src: /*url('myfont.woff2') format('woff2'),
-         url('myfont.woff') format('woff'),*/
-         url('../fonts/Pumpkin Story.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'Optima';
     font-style: normal;
     font-weight: normal;
@@ -18,9 +11,9 @@
     src: local('Helvetica Neu Bold'), url('../fonts/Helvetica Neu Bold.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'HelveticaNeue Light';
+    font-family: 'Helvetica Neue';
     font-weight: normal;
-    src: local('HelveticaNeue Light'), url('../fonts/HelveticaNeue Light.ttf') format('truetype');
+    src: local('Helvetica Neue'), url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
 }
 
 #logo:hover {
@@ -44,7 +37,7 @@
     z-index: 40;
 }
 
-#navigation {
+/* #navigation {
     display: flex;
     width: 50%;
     align-items: center;
@@ -55,7 +48,7 @@
 
 #navigation p {
     margin-right: 60pt;
-}
+} */
 
 h4 a {
     text-decoration: none;
@@ -325,7 +318,7 @@ padding: 50px 0 100px 0;
     }
     
     .projectOverview h4 {
-        font: 12pt 'Helvetica Neue';
+        font: 12pt 'Helvetica Neu Bold';
         font-weight: bold;
     }
  
@@ -509,7 +502,7 @@ padding: 50px 0 100px 0;
     }
     
     .projectOverview h4 {
-        font: 16pt 'Helvetica Neue';
+        font: 16pt 'Helvetica Neu Bold';
         font-weight: bold; 
     }
     
@@ -534,7 +527,7 @@ padding: 50px 0 100px 0;
     }
 
     h4 {
-        font: 20pt 'Helvetica Neue';
+        font: 20pt 'Helvetica Neu Bold';
         font-weight: bold;
     }
 
@@ -722,8 +715,9 @@ padding: 50px 0 100px 0;
     line-height: 25px;
     text-decoration: none;
     border-style: inherit;
-    font-family: 'Helvetica Neue';
-    font-size: 18px;
+    /* font: 18px 'Helvetica Neue'; */
+    font: 18px 'Helvetica Neue';
+    /* font: 18px 'Helvetica Neu Bold'; */
     transition: 0,5s;
     /* margin-left: 50px; */
 }

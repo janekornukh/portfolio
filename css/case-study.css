@@ -11,7 +11,7 @@
     url("../fonts/Helvetica Neu Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "HelveticaNeue Light";
+  font-family: "Helvetica Neue";
   font-weight: normal;
   src: local("HelveticaNeue Light"),
     url("../fonts/HelveticaNeue Light.ttf") format("truetype");
@@ -76,7 +76,7 @@ html {
 }
 
 h4 {
-  font: 18pt "Helvetica Neue" !important;
+  font: 18pt "Helvetica Neu Bold" !important;
   font-weight: bold;
   margin-left: 30px;
 }
